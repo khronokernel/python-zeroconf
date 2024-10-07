@@ -167,7 +167,7 @@ jobs:
           CIBW_SKIP: cp36-* cp37-* pp36-* pp37-* *p38-*_aarch64 cp38-*_arm64 *p39-*_aarch64 *p310-*_aarch64 pp*_aarch64 *musllinux*_aarch64
           CIBW_BEFORE_ALL_LINUX: apt install -y gcc || yum install -y gcc || apk add gcc
           CIBW_ARCHS_LINUX: auto aarch64
-          CIBW_ARCHS_MACOS: x86_64 universal2 arm64
+          CIBW_ARCHS_MACOS: "x86_64 universal2 arm64"
           CIBW_BUILD_VERBOSITY: 3
           REQUIRE_CYTHON: 1
 
